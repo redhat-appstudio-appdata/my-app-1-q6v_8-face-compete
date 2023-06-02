@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-dxvj
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/psrivast1-tenant/my-app-1/devfile-sample-code-with-quarkus-dxvj@sha256:75ef5e69a1de6c0aeb8299c726d1110774fe9f7b135697ea5e638a5125dba9db
+        name: my-java-quarkus
+        resources: {}
+status: {}
